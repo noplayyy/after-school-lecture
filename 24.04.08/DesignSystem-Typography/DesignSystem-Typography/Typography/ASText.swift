@@ -27,10 +27,10 @@ public struct ASText: View {
     
     public var body: some View {
         Text(LocalizedStringKey(text))
-            .textStyle(
-                textStyle,
-                isFixedSize: isFixedSize
-            )
+//            .textStyle(
+//                textStyle,
+//                isFixedSize: isFixedSize
+//            )
             .foregroundColor(color)
     }
 }

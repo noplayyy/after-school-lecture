@@ -64,3 +64,28 @@ internal extension TextStyle {
         }
     }
 }
+
+internal extension TextStyle {
+    // TODO: - font
+
+    // TODO: - lineHeight
+}
+
+internal struct TextModifier: ViewModifier {
+    let textStyle: TextStyle
+    var isFixedSize: Bool = false
+    
+    func body(content: Content) -> some View {
+        content
+        // TODO: - Apply FixedSize or Dynamic Type Size Text Style
+
+        // TODO: - Apply LineHeight
+    }
+}
+
+public extension View {
+    func textStyle(_ textStyle: TextStyle, isFixedSize: Bool = false) -> some View {
+        self
+            // TODO: - Apply TextModifier
+    }
+}
